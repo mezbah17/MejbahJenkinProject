@@ -13,14 +13,12 @@ public class Hooks extends Base {
     @Before
     public void setup() throws MalformedURLException {
         ChromeOptions opt = new ChromeOptions();
-
         driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),opt);
     }
 
     @After
     public void tearDown() throws InterruptedException {
-        //Thread.sleep(20000);
-        //driver.close(); //to close Current Tab of the Browser
-        driver.quit();  //to close Browser Application or Window
+
+        driver.quit();
     }
 }

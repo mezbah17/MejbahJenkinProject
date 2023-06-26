@@ -4,7 +4,7 @@ import base.Base;
 import org.openqa.selenium.By;
 
 public class CustomerLoginPage extends Base {
-    //Locators
+
     public static By textCustomerUserId = By.name("mailuid");
     public static By textCustomerPassword = By.xpath("//input[@name='pwd']");
     public static By btnCustomerLogin = By.cssSelector("input[name='login-submit']");
