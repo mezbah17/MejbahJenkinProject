@@ -13,6 +13,7 @@ public class Base {
 
     public static void click( By locator  ) {
         driver.findElement( locator ).click();
+        System.out.println("I love my country");
     }
 
     public static void sendKeys(By locator, String keys) {
